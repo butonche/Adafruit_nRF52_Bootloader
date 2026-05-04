@@ -1,21 +1,17 @@
 #ifndef HOLYIOT_19077_H
 #define HOLYIOT_19077_H
 
-#define _PINNUM(port, pin)    ((port)*32 + (pin))
-
 /*------------------------------------------------------------------*/
 /* LED
  *------------------------------------------------------------------*/
 #define LEDS_NUMBER           1
-#define LED_PRIMARY_PIN       _PINNUM(0, 8)
+#define LED_PRIMARY_PIN       PINNUM(0, 8)
 #define LED_STATE_ON          0
 
 /*------------------------------------------------------------------*/
 /* BUTTON
  *------------------------------------------------------------------*/
-#define BUTTONS_NUMBER      2
-#define BUTTON_1            _PINNUM(0, 6)
-#define BUTTON_2            _PINNUM(0, 7)
+#define BUTTON_DFU          PINNUM(0, 6)
 #define BUTTON_PULL         NRF_GPIO_PIN_PULLDOWN
 
 //--------------------------------------------------------------------+
